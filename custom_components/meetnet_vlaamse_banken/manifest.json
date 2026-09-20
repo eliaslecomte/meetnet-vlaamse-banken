@@ -3,10 +3,11 @@
   "name": "Meetnet Vlaamse Banken",
   "codeowners": ["@eliaslecomte"],
   "config_flow": true,
-  "documentation": "https://github.com/eliaslecomte/meetnet-vlaamse-banken-ha",
+  "dependencies": [],
+  "documentation": "https://github.com/eliaslecomte/meetnet-vlaamse-banken",
   "integration_type": "hub",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/eliaslecomte/meetnet-vlaamse-banken-ha/issues",
-  "requirements": ["aiohttp>=3.8.0"],
+  "issue_tracker": "https://github.com/eliaslecomte/meetnet-vlaamse-banken/issues",
+  "requirements": [],
   "version": "1.0.0"
 }
