@@ -8,7 +8,7 @@ from typing import Any
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
-from homeassistant.exceptions import ConfigEntryAuthFailed
+from homeassistant.exceptions import ConfigEntryAuthFailed, ConfigEntryNotReady
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 
 from .api import (
@@ -76,7 +76,7 @@ class MeetnetDataUpdateCoordinator(DataUpdateCoordinator[dict[str, DataValue]]):
         except MeetnetAuthError as err:
             raise ConfigEntryAuthFailed(f"Authentication failed: {err}") from err
         except MeetnetConnectionError as err:
-            raise UpdateFailed(f"Failed to fetch catalog: {err}") from err
+            raise ConfigEntryNotReady(f"Failed to fetch catalog: {err}") from err
 
     async def _async_update_data(self) -> dict[str, DataValue]:
         """Fetch data from API."""

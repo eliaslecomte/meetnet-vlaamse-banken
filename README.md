@@ -81,7 +81,7 @@ The integration polls the API every 5 minutes by default. This balances data fre
 If you see authentication errors:
 1. Verify your credentials are correct
 2. Check if you can log in at [meetnetvlaamsebanken.be](https://meetnetvlaamsebanken.be/)
-3. If your password changed, use the "Reconfigure" option in the integration settings
+3. If your password changed, go to **Settings** > **Devices & Services** and follow the reauthentication prompt for Meetnet Vlaamse Banken to enter your updated credentials. If no prompt appears yet, reload the integration to trigger an authentication check.
 
 ### Missing Data
 
