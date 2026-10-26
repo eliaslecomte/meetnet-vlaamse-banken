@@ -1,6 +1,6 @@
 # Meetnet Vlaamse Banken - Home Assistant Integration
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+[![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
 
 Home Assistant integration for the [Meetnet Vlaamse Banken](https://meetnetvlaamsebanken.be/) (Flemish Banks Monitoring Network) API. This integration provides real-time weather and oceanographic data from monitoring stations along the Belgian coast.
 
@@ -20,15 +20,16 @@ You need API credentials for the Meetnet Vlaamse Banken API. You can request acc
 
 ### HACS (Recommended)
 
+This integration is available in the default HACS store.
+
+[![Open your Home Assistant instance and open this repository inside HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=eliaslecomte&repository=meetnet-vlaamse-banken&category=integration)
+
+Or manually:
+
 1. Open HACS in your Home Assistant instance
-2. Click on "Integrations"
-3. Click the three dots in the top right corner
-4. Select "Custom repositories"
-5. Add this repository URL: `https://github.com/eliaslecomte/meetnet-vlaamse-banken`
-6. Select "Integration" as the category
-7. Click "Add"
-8. Search for "Meetnet Vlaamse Banken" and install it
-9. Restart Home Assistant
+2. Search for "Meetnet Vlaamse Banken"
+3. Open it and click **Download**
+4. Restart Home Assistant
 
 ### Manual Installation
 
